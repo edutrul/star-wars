@@ -83,8 +83,6 @@ $(document).ready(function() {
     startTimer(time, display);
 
 
-});
-
 function startTimer(duration, display) {
   var timer = duration, minutes, seconds;
   setInterval(function () {
@@ -93,7 +91,8 @@ function startTimer(duration, display) {
 
       minutes = minutes < 10 ? "0" + minutes : minutes;
       seconds = seconds < 10 ? "0" + seconds : seconds;
-
+      
+      playSound("TIE-Fly" + getRandomInt(1, 13) + ".wav");
       display.text(seconds);
       if (--timer < 0) {
           timer = duration;
@@ -107,6 +106,8 @@ function startTimer(duration, display) {
   
   console.log(getRandomInt(100, 500));
 }
+});
+
 
 /**
  * Returns a random integer between min (inclusive) and max (inclusive)

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SW</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script type="text/javascript" src="jquery.spritely-0.4.js"></script>
+
+	<script type="text/javascript" src="jquery.videoBG.js"></script>
+
+  <script type="text/javascript" src="sw.js"></script>
+  <style>
+
+    .tie-fighter {
+			background: transparent url(images/tie_fighter.png) 0 0 no-repeat;
+			position: absolute;
+			//top: 0px;
+			//left: 0px;
+			width: 180px;
+			height: 123px;
+			z-index: 2000;
+			cursor: pointer;
+    }
+    
+    #heading-container {
+      text-align: center;
+      color: yellow;
+    }
+    
+  </style>
+</head>
+<body>
+  <p id="gamepad-info" style="display: none">Waiting for Gamepad.</p>
+<div id="container">
+  
+  <div id="heading-container">
+      <img width="200" height="50" src="images/star_wars_yellow_logo.svg">
+      <div id="time-sw">Kill tie fighters in: <span id="time">10</span> seconds!</div>
+  </div>
+	<div class="tie-fighter" id="tie-fighter-0"></div>
+	<div class="tie-fighter" id="tie-fighter-1"></div>
+	<div class="tie-fighter" id="tie-fighter-2"></div>
+	<div class="tie-fighter" id="tie-fighter-3"></div>
+	<div class="tie-fighter" id="tie-fighter-4"></div>
+	<div class="tie-fighter" id="tie-fighter-5"></div>
+	<div class="tie-fighter" id="tie-fighter-6"></div>
+	<div class="tie-fighter" id="tie-fighter-7"></div>
+	<div class="tie-fighter" id="tie-fighter-8"></div>
+	<div class="tie-fighter" id="tie-fighter-9"></div>
+	<div class="tie-fighter" id="tie-fighter-10"></div>
+</div>
+</body>
+</html>
+
